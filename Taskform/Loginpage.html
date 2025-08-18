@@ -1,53 +1,32 @@
-<html>
-<head>
 
-  <title>Sign in</title>
+<html >
+<head>
+  
+  <title>Login</title>
 </head>
 <body>
-  <h2>Sign in</h2>
-  <p>Please fill out the form to complete the signin process</p>
-<fieldset>
-  <form>
-    <label >Name</label><br>
-    <input  type="text" placeholder="Enter your full name" required><br><br>
+  <h2>Login</h2>
+  <p>Please enter your credentials to log in</p>
 
-    <label >Username</label><br>
-    <input  type="text" placeholder="Create a username" required><br><br>
+  <fieldset>
+    <form>
+      <label >Username or Email</label><br>
+      <input  type="text" placeholder="Enter your username or email" required><br><br>
 
-    <label >Email ID</label><br>
-    <input  placeholder="you@example.com" required><br><br>
+      <label >Password</label><br>
+      <input  type="password" placeholder="Enter your password" required><br><br>
 
-    <label >Contact Number</label><br>
-    <input  type="tel" placeholder="+91 xxxxx xxxxx" required><br><br>
+      <input type="checkbox" id="remember" name="remember">
+      <label >Remember me</label><br><br>
 
-    <label>DOB</label><br>
-    <input  type="date" required><br><br>
+      <input type="submit" value="Login">
+      <input type="reset" value="Clear"><br><br>
 
-    <fieldset>
-      <legend>Gender</legend>
-      <input  type="radio" name="gender">
-      <label >Male</label><br>
+      <a href="#">Forgot Password?</a><br>
+      <a href="SignupForm.html">Don’t have an account? Sign Up</a>
+    </form>
+    <a href="Loginpage.html"Already have an account ?>Back to Home</a>
+  </fieldset>
 
-      <input type="radio" name="gender">
-      <label >Female</label><br>
-
-      <input  type="radio" name="gender">
-      <label >Other</label><br>
-    </fieldset>
-    <br>
-
-    <label >Address</label><br>
-    <input  type="text" placeholder="Enter your address" required><br><br>
-
-    <label >Password</label><br>
-    <input type="password" placeholder="e.g., abc123"><br><br>
-
-    <label >Confirm Password</label><br>
-    <input  type="password" placeholder="Re-enter password" ><br><br>
-
-    <input type="submit" value="Sign Up">
-  </form>
-
-</fieldset>
 </body>
 </html>
