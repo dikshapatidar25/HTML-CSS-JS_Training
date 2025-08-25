@@ -1,0 +1,68 @@
+body 
+{
+    background-color: lightblue;
+}
+
+h1 
+{
+    background-color: aqua;
+}
+
+
+p
+ {
+    background-color: whitesmoke;
+}
+
+#pTag 
+{
+
+    text-align: start;
+    color: crimson;
+}
+/* Universal Selector */
+*{
+    padding: 3px;
+    margin: 5px;
+}
+
+/* Grouping Selector */
+h2,h3,p 
+{
+    text-align: center;
+    color: darkgoldenrod;
+}
+#testStylingMultiplePros
+{
+background-color: #19bccb;
+color: #c32f92;
+margin: 0;
+padding: 0;
+text-align: left;
+font-size: 100%;
+font-family: sans-serif;
+}
+#testDiv
+{
+    background-image:url('./HD-wallpaper-lord-shiva-mahakal-lord-shiva-thumbnail.jpg') ;
+    border:5px solid orange;
+    border-radius:25px;
+    /* margin-top: 20px;
+    margin-bottom:20px ;
+    margin-right: 20px;
+    margin-left:20px ; */
+    margin: 15px 10px 15px 10px;
+    
+}
+
+/* didSectionProperties */
+    {
+    margin: 15px;
+    padding: 5px;
+    background-color: darkslategrey;
+    height: 120%;
+    /* border: 5px solid black; */
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
