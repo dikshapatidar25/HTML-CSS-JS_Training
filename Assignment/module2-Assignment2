@@ -1,0 +1,55 @@
+// QUESTION1
+// let rosePrice = 8;
+// let roseQuantity = 70;
+
+// let lilyPrice = 10;
+// let lilyQuantity = 50;
+
+// let tulipPrice = 2;
+// let tulipQuantity = 120;
+
+// let roseValue = rosePrice * roseQuantity;
+// let lilyValue = lilyPrice * lilyQuantity;
+// let tulipValue = tulipPrice * tulipQuantity;
+
+// let totalValue = roseValue + lilyValue + tulipValue;
+
+// console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+// console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+// console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+// console.log("Total:", totalValue);
+
+
+// QUESTION2
+const rosePrice = 8;
+const lilyPrice = 10;
+const tulipPrice = 2;
+
+let roseQuantity = 70;
+let lilyQuantity = 50;
+let tulipQuantity = 120;
+
+let roseValue = rosePrice * roseQuantity;
+let lilyValue = lilyPrice * lilyQuantity;
+let tulipValue = tulipPrice * tulipQuantity;
+let totalValue = roseValue + lilyValue + tulipValue;
+
+console.log("=== Initial  ===");
+console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+console.log("Total:", totalValue);
+
+roseQuantity -= 20; // 70 - 20 = 50
+lilyQuantity -= 30; // 50 - 30 = 20
+
+roseValue = rosePrice * roseQuantity;
+lilyValue = lilyPrice * lilyQuantity;
+tulipValue = tulipPrice * tulipQuantity;
+totalValue = roseValue + lilyValue + tulipValue;
+
+console.log("\n=== Updated ===");
+console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+console.log("Total:", totalValue);

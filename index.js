@@ -228,37 +228,38 @@
 // console.log(x); // -> 9000
 // console.log(y); // -> 0.00123
 
-let a = 1 / 0;
-let b = -Infinity;
-console.log(a); // -> Infinity
-console.log(b); // -> -Infinity
-console.log(typeof a); // -> number
-console.log(typeof b); // -> number
-let s = "it's definitely not a number";
-let n = s * 10;
-console.log(n); // -> NaN
-console.log(typeof n); // -> number
+// let a = 1 / 0;
+// let b = -Infinity;
+// console.log(a); // -> Infinity
+// console.log(b); // -> -Infinity
+// console.log(typeof a); // -> number
+// console.log(typeof b); // -> number
+// let s = "it's definitely not a number";
+// let n = s * 10;
+// console.log(n); // -> NaN
+// console.log(typeof n); // -> number
 
 // BIGLNT
-let big = 1234567890000000000000n;
-let big2 = 1n;
-console.log(big); // -> 1234567890000000000000n
-console.log(typeof big); // -> bigint
-console.log(big2); // -> 1n
-console.log(7n / 4n); // -> 1n
+// let big = 1234567890000000000000n;
+// let big2 = 1n;
+// console.log(big); // -> 1234567890000000000000n
+// console.log(typeof big); // -> bigint
+// console.log(big2); // -> 1n
+// console.log(7n / 4n); // -> 1n
 
 // (STRING)
-let country = "Malawi";
-let continent = 'Africa';
-console.log(country); // -> Malawi
-console.log(typeof country); // -> string
-console.log(continent); // -> Africa
-console.log(typeof continent); // -> string
 
-let message1 = "The vessel 'Mars' called at the port.";
-let message2 = 'Cyclone "Cilida" to pass close to Mauritius.';
-console.log(message1); // -> The vessel 'Mars' called at the port.
-console.log(message2); // -> Cyclone "Cilida" to pass close to Mauritius.
+// let country = "Malawi";
+// let continent = 'Africa';
+// console.log(country); // -> Malawi
+// console.log(typeof country); // -> string
+// console.log(continent); // -> Africa
+// console.log(typeof continent); // -> string
+
+// let message1 = "The vessel 'Mars' called at the port.";
+// let message2 = 'Cyclone "Cilida" to pass close to Mauritius.';
+// console.log(message1); // -> The vessel 'Mars' called at the port.
+// console.log(message2); // -> Cyclone "Cilida" to pass close to Mauritius.
 
 // let message1 = 'The vessel \'Mars\' called at the port.';
 // let message2 = "Cyclone \"Cilida\" to pass close to Mauritius.";
@@ -267,7 +268,6 @@ console.log(message2); // -> Cyclone "Cilida" to pass close to Mauritius.
 // let path = "C:\\Windows";
 // console.log(path); // -> C:\Windows
 
-// PRIMITIVE DATA TYPE (STRING)
 // let path = "C:\\Windows" - "Windows";
 // console.log(path); // -> NaN
 // let test = "100" - "10";
@@ -330,4 +330,5 @@ console.log(message2); // -> Cyclone "Cilida" to pass close to Mauritius.
 // console.log(typeof notDeclaredVar); // -> undefined
 // console.log(notDeclaredVar); // -> Uncaught ReferenceError:
 
+// (NULL)
 
