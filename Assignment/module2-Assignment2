@@ -55,19 +55,169 @@
 // console.log("Total:", totalValue);
 
 
-// QUESTION 3
-let name1 = "Maxwell Wright"
-let phone1 = "(0191) 719 6495"
-let email1 = "Curabitur.egestas.nunc@nonummyac.co.uk"
+// // QUESTION 3
+// let name1 = "Maxwell Wright"
+// let phone1 = "(0191) 719 6495"
+// let email1 = "Curabitur.egestas.nunc@nonummyac.co.uk"
 
-let name2 = "Raja Villarreal"
-let phone2 = "0866 398 2895"
-let email2 = "posuere.vulputate@sed.com"
+// let name2 = "Raja Villarreal"
+// let phone2 = "0866 398 2895"
+// let email2 = "posuere.vulputate@sed.com"
 
-let name3 = "Helen Richards"
-let phone3 = "0800 1111"
-let email3 = "libero@convallis.edu"
+// let name3 = "Helen Richards"
+// let phone3 = "0800 1111"
+// let email3 = "libero@convallis.edu"
 
-console.log(name1 + " / " + phone1 + " / " + email1);
-console.log(name2 + " / " + phone2 + " / " + email2);
-console.log(name3 + " / " + phone3 + " / " + email3);
+// console.log(name1 + " / " + phone1 + " / " + email1);
+// console.log(name2 + " / " + phone2 + " / " + email2);
+// console.log(name3 + " / " + phone3 + " / " + email3);
+
+
+// QUESTION 4
+// === 1.  ===
+
+// Boolean
+let bool1 = true;              
+console.log(bool1);
+console.log(typeof bool1);
+
+let bool2 = Boolean(false);    
+console.log(bool2);
+console.log(typeof bool2);
+
+// Number
+let num1 =54;                
+console.log(num1);
+console.log(typeof num1);
+
+let num2 = Number(200);        
+console.log(num2);
+console.log(typeof num2);
+
+
+// BigInt
+let big1 = 1234n;  
+console.log(big1);
+console.log(typeof big1);            
+
+let big2 = BigInt(5678); 
+console.log(big2);
+console.log(typeof big2);  
+
+// String
+let str1 = "Hello";  
+console.log(str1);
+console.log(typeof str1); 
+
+let str2 = String("World");    
+console.log(str2);
+console.log(typeof str2); 
+
+// Undefined
+let undef1 = undefined; 
+console.log(undef1)
+console.log(typeof undef1); 
+       
+let undef2;  
+console.log(undef2)
+console.log(typeof undef2);            
+
+
+// === 2.  ===
+// Boolean
+let booll1 = true;
+let booll2 = Boolean(false);
+console.log(`${booll1} [${typeof booll1}]`);
+console.log(`${booll2} [${typeof booll2}]`);
+
+// Number
+let numm1 = 1560;
+let numm2 = Number(42);
+console.log(`${numm1} [${typeof numm1}]`);
+console.log(`${numm2} [${typeof numm2}]`);
+
+// BigInt
+let bigg1 = 154n;
+let bigg2 = BigInt(5678);
+console.log(`${bigg1} [${typeof bigg1}]`);
+console.log(`${bigg2} [${typeof bigg2}]`);
+
+// String
+let strr1 = "Diksha";
+let strr2 = String("Patidar");
+console.log(`${strr1} [${typeof strr1}]`);
+console.log(`${strr2} [${typeof strr2}]`);
+
+// Undefined
+let undeff1 = undefined;
+let undeff2; 
+console.log(`${undeff1} [${typeof undeff1}]`);
+console.log(`${undeff2} [${typeof undeff2}]`);
+
+
+
+//  === 3.  ===
+
+// Start with a String
+let str = "1234";
+
+// Convert String -> Number
+let num = Number(str);
+
+// Convert Number -> BigInt
+let big = BigInt(num);
+
+// Convert BigInt -> Boolean
+let bool = Boolean(big);
+
+console.log(`"${str}" -> ${num} [${typeof num}] -> ${big} [${typeof big}] -> ${bool} [${typeof bool}]`);
+
+
+//  === 4 ===
+// Numbers
+console.log(10 + 20, `[${typeof (10 + 20)}]`);
+
+// Strings
+console.log("abc" + "xyz", `[${typeof ("abc" + "xyz")}]`);
+
+// Booleans
+console.log(true + false, `[${typeof (true + false)}]`);
+
+// BigInts
+console.log(100n + 200n, `[${typeof (100n + 200n)}]`);
+
+
+//  === 5.  ===
+
+// Number + String 
+let numStr = 10 + "5";
+console.log(numStr);
+
+// Boolean + Number 
+let boolNum = true + 5;
+console.log(boolNum);
+
+// Boolean + String 
+let boolStr = false + "hello";
+console.log(boolStr);
+
+// Number + BigInt 
+let numBig = 10n + BigInt(5);
+console.log(numBig);
+
+// String + BigInt 
+let strBig = "Value: "+100n;
+console.log(strBig);
+
+// Undefined + Number 
+let undefNum = undefined + 10;
+console.log(undefNum);
+
+// Null + Number 
+let nullNum = null + 5;
+console.log(nullNum);
+
+
+// === 6. ===
+numb = 42 + + "1";
+console.log(numb, `[${typeof numb}]`);
