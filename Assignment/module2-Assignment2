@@ -1,73 +1,73 @@
-// QUESTION1
-let rosePrice = 8
-let roseQuantity = 70
+// // QUESTION1
+// let rosePrice = 8
+// let roseQuantity = 70
 
-let lilyPrice = 10
-let lilyQuantity = 50
+// let lilyPrice = 10
+// let lilyQuantity = 50
 
-let tulipPrice = 2
-let tulipQuantity = 120
+// let tulipPrice = 2
+// let tulipQuantity = 120
 
-let roseValue = rosePrice * roseQuantity;
-let lilyValue = lilyPrice * lilyQuantity;
-let tulipValue = tulipPrice * tulipQuantity;
+// let roseValue = rosePrice * roseQuantity;
+// let lilyValue = lilyPrice * lilyQuantity;
+// let tulipValue = tulipPrice * tulipQuantity;
 
-let totalValue = roseValue + lilyValue + tulipValue;
+// let totalValue = roseValue + lilyValue + tulipValue;
 
-console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
-console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
-console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
-console.log("Total:", totalValue);
+// console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+// console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+// console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+// console.log("Total:", totalValue);
 
 
-// QUESTION2
-const rosePrice = 8;
-const lilyPrice = 10;
-const tulipPrice = 2;
+// // QUESTION2
+// const rosePrice = 8;
+// const lilyPrice = 10;
+// const tulipPrice = 2;
 
-let roseQuantity = 70;
-let lilyQuantity = 50;
-let tulipQuantity = 120;
+// let roseQuantity = 70;
+// let lilyQuantity = 50;
+// let tulipQuantity = 120;
 
-let roseValue = rosePrice * roseQuantity;
-let lilyValue = lilyPrice * lilyQuantity;
-let tulipValue = tulipPrice * tulipQuantity;
-let totalValue = roseValue + lilyValue + tulipValue;
+// let roseValue = rosePrice * roseQuantity;
+// let lilyValue = lilyPrice * lilyQuantity;
+// let tulipValue = tulipPrice * tulipQuantity;
+// let totalValue = roseValue + lilyValue + tulipValue;
 
-console.log("=== Initial  ===");
-console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
-console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
-console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
-console.log("Total:", totalValue);
+// console.log("=== Initial  ===");
+// console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+// console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+// console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+// console.log("Total:", totalValue);
 
-roseQuantity -= 20; // 70 - 20 = 50
-lilyQuantity -= 30; // 50 - 30 = 20
+// roseQuantity -= 20; // 70 - 20 = 50
+// lilyQuantity -= 30; // 50 - 30 = 20
 
-roseValue = rosePrice * roseQuantity;
-lilyValue = lilyPrice * lilyQuantity;
-tulipValue = tulipPrice * tulipQuantity;
-totalValue = roseValue + lilyValue + tulipValue;
+// roseValue = rosePrice * roseQuantity;
+// lilyValue = lilyPrice * lilyQuantity;
+// tulipValue = tulipPrice * tulipQuantity;
+// totalValue = roseValue + lilyValue + tulipValue;
 
-console.log("\n=== Updated ===");
-console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
-console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
-console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
-console.log("Total:", totalValue);
+// console.log("\n=== Updated ===");
+// console.log("Rose – unit price:", rosePrice, ",rose quantity is:", roseQuantity, ",rose value is:", roseValue);
+// console.log("Lily – unit price:", lilyPrice, ",lily quantity is:", lilyQuantity, ",lily value is:", lilyValue);
+// console.log("Tulip – unit price:", tulipPrice, ",tulip quantity is:", tulipQuantity, ",tulip value is:", tulipValue);
+// console.log("Total:", totalValue);
 
 
 // QUESTION 3
-let name1 = "Maxwell Wright";
-let phone1 = "(0191) 719 6495";
-let email1 = "Curabitur.egestas.nunc@nonummyac.co.uk";
+let name1 = "Maxwell Wright"
+let phone1 = "(0191) 719 6495"
+let email1 = "Curabitur.egestas.nunc@nonummyac.co.uk"
 
-let name2 = "Raja Villarreal";
-let phone2 = "0866 398 2895";
-let email2 = "posuere.vulputate@sed.com";
+let name2 = "Raja Villarreal"
+let phone2 = "0866 398 2895"
+let email2 = "posuere.vulputate@sed.com"
 
-let name3 = "Helen Richards";
-let phone3 = "0800 1111";
-let email3 = "libero@convallis.edu";
+let name3 = "Helen Richards"
+let phone3 = "0800 1111"
+let email3 = "libero@convallis.edu"
 
 console.log(name1 + " / " + phone1 + " / " + email1);
-
+console.log(name2 + " / " + phone2 + " / " + email2);
 console.log(name3 + " / " + phone3 + " / " + email3);
