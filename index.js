@@ -404,9 +404,81 @@
 // console.log(BigInt(NaN)); // -> Uncaught RangeError: The number NaN cannot
 
 // Implicit Conversions
-const str1 = 42 + "1";
-console.log(str1); // -> 421
-console.log(typeof str1); // -> string
-const str2 = 42 - "2";
-console.log(str2); // -> 41
-console.log(typeof str2); // -> number
+// const str1 = 42 + "1";
+// console.log(str1); // -> 421
+// console.log(typeof str1); // -> string
+// const str2 = 42 - "2";
+// console.log(str2); // -> 41
+// console.log(typeof str2); // -> number
+
+// // OBJECT
+// let testObj = 
+// {
+//     nr: 600,
+//     str: "text"
+// }
+// console.log("testObj:",testObj)
+// console.log(typeof testObj) // -> object
+// console.log("nr:",testObj.nr)
+// console.log("str:",testObj.str)
+
+// let student_Diksha = 
+// {
+//     name: "Diksha",
+//     course:"HTML",
+//     contact:7773048771,
+//     email:"asghh@.gmail.com"
+// }
+// let student_Khushi=
+// {
+//    name: "Khushi",
+//     course:"REACT",
+//     contact:7773058946,
+//     email:"khushi@.gmail.com"
+// } 
+// console.log("Name:",student_Diksha.name)
+// console.log("Name:",student_Diksha.course)
+// console.log("Name:",student_Diksha.contact)
+// console.log("Name:",student_Diksha.email)
+
+// student_Diksha.contact=6862547617
+// student_Diksha.email="diksha@gmail.com"
+
+// console.log("Name:",student_Khushi.name)
+// console.log("Name:",student_Khushi.course)
+// console.log("Name:",student_Khushi.contact)
+// console.log("Name:",student_Khushi.email)
+
+// student_Diksha.age=20
+// console.log("Diksha Age:",student_Diksha)
+// console.log("Khushi Age:",student_Khushi)
+
+
+// ARRAY
+
+// a[0]=address of a+0(*2)=10  (*2 store 2byte implicit )
+// a[1]=address of a+1(*2)=20
+// a[2]=address of a+2(*2)=30
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+console.log(days[0]); // -> Sun
+console.log(days[2]); // -> Tue
+console.log(days[5]); // -> Fri
+days[0] = "Sunday";
+console.log(days[0]); // -> Sunday
+let emptyArray = [];
+console.log(emptyArray[0]); // -> undefined
+
+let animals = [];
+console.log(animals[0]) // -> undefined
+animals[0] = "dog"
+animals[2] = "cat"
+console.log(animals[0]) // -> dog
+console.log(animals[1]) // -> undefined
+console.log(animals[2]) // -> cat
+
+let values = ["Test", 7, 12.3, false];
+console.log(typeof values)
+console.log(values[0])
+console.log(values[1])
+console.log(values[2])
+console.log(values[3])
