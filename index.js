@@ -572,3 +572,33 @@
 // console.log(name) // -> Olivia
 // console.log(names) // -> ["Emma", "Mateo", "Samuel"]
 
+//REVERSE Method
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+// names.reverse();
+// console.log(names);
+
+// Slice Method
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+// let n1 = names.slice(2)
+// console.log(n1)
+// let n2 = names.slice(1,3)
+// console.log(n2)
+// let n3 = names.slice(0, -1)
+// console.log(n3)
+// let n4 = names.slice(-1)
+// console.log(n4)
+// console.log(names) 
+
+// concat Method
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+// let otherNames = ["William", "Jane"];
+// let allNames = names.concat( otherNames);
+// console.log(names); // -> ["Olivia", "Emma", "Mateo","Samuel"]
+// console.log(otherNames); // -> ["William", "Jane"]
+// console.log(allNames); // -> ["Olivia", "Emma", "Mateo",
+// "Samuel", "William", "Jane"]
+
+
+let name= ["Payal","Maya","Khuhi"]
+name1= name.concat(name)
+console.log(name1)
