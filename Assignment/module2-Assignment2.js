@@ -223,26 +223,184 @@
 
 // Task 1
 
-let ticket = 
-{
-  from: "Indore Junction",   
-  to: "Ujjain Junction",     
-  price: 100                 
-}
+// let ticket = 
+// {
+//   from: "Indore Junction",   
+//   to: "Ujjain Junction",     
+//   price: 100                 
+// }
+// console.log("From:", ticket.from)
+// console.log("To:", ticket.to)
+// console.log("Price:", ticket.price)
 
-console.log("Train Ticket Details:")
-console.log("From:", ticket.from)
-console.log("To:", ticket.to)
-console.log("Price:", ticket.price)
+// let person = {}
 
-let person = {}
+// person.firstName = "Diksha"
+// person.lastName = "Patidar"
+// console.log("First Name:", person.firstName)
+// console.log("Last Name:", person.lastName)
 
-person.firstName = "Diksha"
-person.lastName = "Patidar"
+// Task 2
 
-console.log("Person Details:")
-console.log("First Name:", person.firstName)
-console.log("Last Name:", person.lastName)
+// let person = {}
+// person.name = "Diksha"
+// person.surname = "Patidar"
+// console.log("Name:", person.name)
+// console.log("Surname:", person.surname)
+
+// // Task 3
+// let books = [
+//   {
+//     title: "Speaking JavaScript",
+//     author: "Axel Rauschmayer",
+//     pages: 460
+//   },
+//   {
+//     title: "Programming JavaScript Applications",
+//     author: "Eric Elliott",
+//     pages: 254
+//   },
+//   {
+//     title: "Understanding ECMAScript 6",
+//     author: "Nicholas C. Zakas",
+//     pages: 352
+//   }
+// ];
+// console.log(" Title:", books[0].title)
+// console.log(" Author:", books[0].author)
+// console.log(" Pages:", books[0].pages)
+// console.log("--------------------")
+// console.log(" Title:", books[1].title)
+// console.log(" Author:", books[1].author)
+// console.log(" Pages:", books[1].pages)
+// console.log("--------------------")
+// console.log(" Title:", books[2].title)
+// console.log(" Author:", books[2].author)
+// console.log(" Pages:", books[2].pages)
+
+// // Task 4
+// let books = [
+//   {
+//     title: "Speaking JavaScript",
+//     author: "Axel Rauschmayer",
+//     pages: 460
+//   },
+//   {
+//     title: "Programming JavaScript Applications",
+//     author: "Eric Elliott",
+//     pages: 254
+//   },
+//   {
+//     title: "Understanding ECMAScript 6",
+//     author: "Nicholas C. Zakas",
+//     pages: 352
+//   }
+// ];
+
+// books.push(
+//   {
+//   title: "Learning JavaScript Design Patterns",
+//   author: "Addy Osmani",
+//   pages: 254
+// })
+
+// console.log("Total number of books:", books.length)
+// console.log(books[0].title)
+// console.log(books[1].title)
+// console.log(books[2].title)
+// console.log(books[3].title)
+
+// Task 5
+// let books = [
+//   {
+//     title: "Speaking JavaScript",
+//     author: "Axel Rauschmayer",
+//     pages: 460
+//   },
+//   {
+//     title: "Programming JavaScript Applications",
+//     author: "Eric Elliott",
+//     pages: 254
+//   },
+//   {
+//     title: "Understanding ECMAScript 6",
+//     author: "Nicholas C. Zakas",
+//     pages: 352
+//   },
+//   {
+//     title: "Learning JavaScript Design Patterns",
+//     author: "Addy Osmani",
+//     pages: 254
+//   }
+// ]
+// let lastTwoBooks = books.slice(-2)
+// console.log("Copy the last two books to the new array:")
+// console.log(lastTwoBooks)
+
+// // Task 6
+// let books = [
+//   {
+//     title: "Speaking JavaScript",
+//     author: "Axel Rauschmayer",
+//     pages: 460
+//   },
+//   {
+//     title: "Programming JavaScript Applications",
+//     author: "Eric Elliott",
+//     pages: 254
+//   },
+//   {
+//     title: "Understanding ECMAScript 6",
+//     author: "Nicholas C. Zakas",
+//     pages: 352
+//   },
+//   {
+//     title: "Learning JavaScript Design Patterns",
+//     author: "Addy Osmani",
+//     pages: 254
+//   }
+// ]
+// let totalPages = books[0].pages + books[1].pages + books[2].pages + books[3].pages
+// console.log("Total number of pages in the collection:", totalPages)
+
+// Task 5
+// Original array of books
+let books = [
+  {
+    title: "Speaking JavaScript",
+    author: "Axel Rauschmayer",
+    pages: 460
+  },
+  {
+    title: "Programming JavaScript Applications",
+    author: "Eric Elliott",
+    pages: 254
+  },
+  {
+    title: "Understanding ECMAScript 6",
+    author: "Nicholas C. Zakas",
+    pages: 352
+  },
+  {
+    title: "Learning JavaScript Design Patterns",
+    author: "Addy Osmani",
+    pages: 254
+  }
+]
+
+books.shift();
+console.log("Total number of books after removal:", books.length)
+
+console.log(books[0].title)
+console.log(books[1].title)
+console.log(books[2].title)
+
+
+
+
+
+
+
 
 
 

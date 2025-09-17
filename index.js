@@ -654,36 +654,111 @@
 // console.log(0.3 / 0.1)
 
 // Compound Assignment operators
-let x = 10;
-x += 2;
-console.log(x)
-x -= 4;
-console.log(x)
-x *= 3;
-console.log(x)
-x /= 6;
-console.log(x)
-x **= 3;
-console.log(x)
-x %= 10;
-console.log(x)
+// let x = 10;
+// x += 2;
+// console.log(x)
+// x -= 4;
+// console.log(x)
+// x *= 3;
+// console.log(x)
+// x /= 6;
+// console.log(x)
+// x **= 3;
+// console.log(x)
+// x %= 10;
+// console.log(x)
 
 // Logical operators
-// AND 
-console.log(true && true)
-console.log(true && false)
-console.log(false && true)
-console.log(false && false)
+// // AND 
+// console.log(true && true)
+// console.log(true && false)
+// console.log(false && true)
+// console.log(false && false)
 
-// OR
-console.log(true || true)
-console.log(true || false)
-console.log(false || true)
-console.log(false || false)
+// // OR
+// console.log(true || true)
+// console.log(true || false)
+// console.log(false || true)
+// console.log(false || false)
 
-const a = false;
-const b = true;
-const c = false;
-const d = true;
-console.log(a && b && c || d)
-console.log(a && b && (c || d))
+// const a = false;
+// const b = true;
+// const c = false;
+// const d = true;
+// console.log(a && b && c || d)
+// console.log(a && b && (c || d))
+
+// Logical operators and non-Boolean values
+// let nr = 0
+// let year = 1970
+// let name = "Alice"
+// let empty = ""
+// console.log(!nr)
+// console.log(!year)
+// console.log(!name)
+// console.log(!empty)
+// console.log(!!nr)
+// console.log(!!name)
+
+// console.log(true && 1991)
+// console.log(false && 1991)
+// console.log(2 && 5)
+// console.log(0 && 5)
+// console.log("Alice" && "Bob")
+// console.log("" && "Bob")
+// console.log(true || 1991)
+// console.log(false || 1991)
+// console.log(2 || 5)
+// console.log(0 || 5)
+// console.log("Alice" || "Bob")
+// console.log("" || "Bob")
+
+
+
+// let x = 0
+// let y = 0
+// console.log(x++ && y++)
+// console.log(x)
+// console.log(y)
+// console.log("---------")
+// x = 1
+// y = 0
+// console.log(x++ && y++)
+// console.log(x)
+// console.log(y)
+
+// let x = 0
+// let y = 0
+// console.log(x++ || y++)
+// console.log(x)
+// console.log(y)
+// console.log("---------")
+// x = 1
+// y = 0
+// console.log(x++ || y++)
+// console.log(x)
+// console.log(y)
+
+// Compound Assignment Operators
+// let a = true
+// console.log(a)
+// a &&= false
+// console.log(a)
+
+// let b = false
+// console.log(b)
+// b ||= true
+// console.log(b)
+
+// String Operators
+// let greetings = "Hi"
+// console.log(greetings + " " + "Alice")
+// let sentence = "Happy New Year "
+// let newSentence = sentence + 10191
+// console.log(newSentence)
+// console.log(typeof newSentence)
+
+let sentence = "Happy New ";
+sentence += "Year ";
+sentence += 10191;
+console.log(sentence); // -> Happy New Year
