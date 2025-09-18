@@ -762,3 +762,79 @@
 // sentence += "Year "
 // sentence += 10191
 // console.log(sentence) 
+
+// Comparison Operators
+// console.log(10 === 5)
+// console.log(10 === 10)
+// console.log(10 === 10n)
+// console.log(10 === "10")
+// console.log("10" === "10")
+// console.log("Alice" === "Bob")
+// console.log(0 === false)
+// console.log(undefined === false)
+
+// 
+console.log(10 == 5)
+console.log(10 == 10)
+console.log(10 == 10n)
+console.log(10 == "10")
+console.log("10" == "10")
+console.log("Alice" == "Bob")
+console.log(0 == false)
+console.log(undefined == false)
+console.log(NaN == NaN)
+
+console.log(10 !== 5)
+console.log(10 !== 10)
+console.log(10 !== 10n)
+console.log(10 !== "10")
+console.log("10" !== "10")
+console.log("Alice" !== "Bob")
+console.log(0 !== false)
+console.log(undefined !== false)
+console.log(10 != 5)
+console.log(10 != 10)
+console.log(10 != 10n)
+console.log(10 != "10")
+console.log("10" != "10")
+console.log("Alice" != "Bob")
+console.log(0 != false)
+console.log(undefined != false)
+console.log(NaN != NaN)
+
+console.log(10 > 100)
+console.log(101 > 100)
+console.log(101 > "100")
+console.log(101 < 100)
+console.log(100n < 102)
+console.log("10" < 20n)
+console.log(101 <= 100)
+console.log(10 >= 10n)
+console.log("10" <= 20)
+
+// ASCII Value  1 < A < a  1=48, A=65,a=97
+console.log("b" > "a"); // -> true
+console.log("a" > "B"); // -> true
+console.log("B" > "A"); // -> true
+console.log("A" > "4"); // -> true
+console.log("4" > "1"); // -> true
+console.log("ab1" < "ab4"); // -> true
+console.log("ab4" < "abA"); // -> true
+console.log("abB" < "aba"); // -> true
+console.log("aba" < "abb"); // -> true
+console.log("ab" < "ab4"); // -> true
+
+// typeof
+let year = 10191;
+console.log(typeof year); // -> number
+console.log(typeof false); // -> boolean
+
+// instanceof
+let names = ["Patti", "Bob"];
+let name = names[0];
+console.log(names instanceof Array); // -> true
+console.log(name instanceof Array); // -> false
+
+// ternary
+console.log(false ? "Alice" : "Bob"); // -> Alice
+console.log(true ? "Alice" : "Bob"); // -> Bob
