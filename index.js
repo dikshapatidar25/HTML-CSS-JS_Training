@@ -758,7 +758,7 @@
 // console.log(newSentence)
 // console.log(typeof newSentence)
 
-let sentence = "Happy New ";
-sentence += "Year ";
-sentence += 10191;
-console.log(sentence); // -> Happy New Year
+// let sentence = "Happy New "
+// sentence += "Year "
+// sentence += 10191
+// console.log(sentence) 

@@ -363,8 +363,7 @@
 // let totalPages = books[0].pages + books[1].pages + books[2].pages + books[3].pages
 // console.log("Total number of pages in the collection:", totalPages)
 
-// Task 5
-// Original array of books
+// Task 7
 let books = [
   {
     title: "Speaking JavaScript",
@@ -395,6 +394,41 @@ console.log(books[0].title)
 console.log(books[1].title)
 console.log(books[2].title)
 
+// Task 8  Complex Data Types - Scenario based question
+let contacts = [
+  {
+    name: "Khushi Sharma",
+    phone: "6260586472",
+    email: "khushi12@gmail.com"
+  },
+  {
+    name: "Payal Parihar",
+    phone: "6895452678",
+    email: "payal.87@gmail.com"
+  },
+  {
+    name: "Neha Verma",
+    phone: "7859254869",
+    email: "nehaverma56@gmail.com"
+  }
+]
+contacts.push(
+{
+  name: "Maisie Haley",
+  phone: "09135313030",
+  email: "risus.Quisque@urna.ca."
+})
+console.log("Contact:",contacts[0])
+console.log("Contact:",contacts[1])
+console.log("Contact:",contacts[2])
+console.log("Contact:",contacts[3])
+
+console.log("First Contact:")
+console.log(contacts[0].name + " / " + contacts[0].phone + " / " + contacts[0].email)
+console.log("----------")
+let lastindex = contacts.length - 1;
+console.log("Last Contact:");
+console.log(contacts[lastindex].name + " / " + contacts[lastindex].phone + " / " + contacts[lastindex].email)
 
 
 
