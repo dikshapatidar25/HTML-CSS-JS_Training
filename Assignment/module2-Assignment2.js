@@ -221,7 +221,7 @@
 // numb = 42 + + "1";
 // console.log(numb, `[${typeof numb}]`);
 
-// Task 1
+// Task 1 Object
 
 // let ticket = 
 // {
@@ -240,7 +240,7 @@
 // console.log("First Name:", person.firstName)
 // console.log("Last Name:", person.lastName)
 
-// Task 2
+// Task 2 Object
 
 // let person = {}
 // person.name = "Diksha"
@@ -248,7 +248,7 @@
 // console.log("Name:", person.name)
 // console.log("Surname:", person.surname)
 
-// // Task 3
+// // Task 3  Array
 // let books = [
 //   {
 //     title: "Speaking JavaScript",
@@ -278,7 +278,7 @@
 // console.log(" Author:", books[2].author)
 // console.log(" Pages:", books[2].pages)
 
-// // Task 4
+// // Task 4 Array
 // let books = [
 //   {
 //     title: "Speaking JavaScript",
@@ -310,7 +310,7 @@
 // console.log(books[2].title)
 // console.log(books[3].title)
 
-// Task 5
+// Task 5 Array
 // let books = [
 //   {
 //     title: "Speaking JavaScript",
@@ -337,7 +337,7 @@
 // console.log("Copy the last two books to the new array:")
 // console.log(lastTwoBooks)
 
-// // Task 6
+// // Task 6 Array
 // let books = [
 //   {
 //     title: "Speaking JavaScript",
@@ -363,7 +363,7 @@
 // let totalPages = books[0].pages + books[1].pages + books[2].pages + books[3].pages
 // console.log("Total number of pages in the collection:", totalPages)
 
-// Task 7
+// Task 7 Array
 let books = [
   {
     title: "Speaking JavaScript",
