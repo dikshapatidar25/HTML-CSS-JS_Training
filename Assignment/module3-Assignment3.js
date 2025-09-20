@@ -17,8 +17,5 @@ console.log(25 > 1)
 console.log(2 + 2 * 2 > 4)
 
 // Task 3
-console.log(true != false)
-console.log(false == false)
-console.log(false == false == true)
-console.log(true == false == false && true)
+
 
