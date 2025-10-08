@@ -774,67 +774,108 @@
 // console.log(undefined === false)
 
 // 
-console.log(10 == 5)
-console.log(10 == 10)
-console.log(10 == 10n)
-console.log(10 == "10")
-console.log("10" == "10")
-console.log("Alice" == "Bob")
-console.log(0 == false)
-console.log(undefined == false)
-console.log(NaN == NaN)
+// console.log(10 == 5)
+// console.log(10 == 10)
+// console.log(10 == 10n)
+// console.log(10 == "10")
+// console.log("10" == "10")
+// console.log("Alice" == "Bob")
+// console.log(0 == false)
+// console.log(undefined == false)
+// console.log(NaN == NaN)
 
-console.log(10 !== 5)
-console.log(10 !== 10)
-console.log(10 !== 10n)
-console.log(10 !== "10")
-console.log("10" !== "10")
-console.log("Alice" !== "Bob")
-console.log(0 !== false)
-console.log(undefined !== false)
-console.log(10 != 5)
-console.log(10 != 10)
-console.log(10 != 10n)
-console.log(10 != "10")
-console.log("10" != "10")
-console.log("Alice" != "Bob")
-console.log(0 != false)
-console.log(undefined != false)
-console.log(NaN != NaN)
+// console.log(10 !== 5)
+// console.log(10 !== 10)
+// console.log(10 !== 10n)
+// console.log(10 !== "10")
+// console.log("10" !== "10")
+// console.log("Alice" !== "Bob")
+// console.log(0 !== false)
+// console.log(undefined !== false)
+// console.log(10 != 5)
+// console.log(10 != 10)
+// console.log(10 != 10n)
+// console.log(10 != "10")
+// console.log("10" != "10")
+// console.log("Alice" != "Bob")
+// console.log(0 != false)
+// console.log(undefined != false)
+// console.log(NaN != NaN)
 
-console.log(10 > 100)
-console.log(101 > 100)
-console.log(101 > "100")
-console.log(101 < 100)
-console.log(100n < 102)
-console.log("10" < 20n)
-console.log(101 <= 100)
-console.log(10 >= 10n)
-console.log("10" <= 20)
+// console.log(10 > 100)
+// console.log(101 > 100)
+// console.log(101 > "100")
+// console.log(101 < 100)
+// console.log(100n < 102)
+// console.log("10" < 20n)
+// console.log(101 <= 100)
+// console.log(10 >= 10n)
+// console.log("10" <= 20)
 
 // ASCII Value  1 < A < a  1=48, A=65,a=97
-console.log("b" > "a"); // -> true
-console.log("a" > "B"); // -> true
-console.log("B" > "A"); // -> true
-console.log("A" > "4"); // -> true
-console.log("4" > "1"); // -> true
-console.log("ab1" < "ab4"); // -> true
-console.log("ab4" < "abA"); // -> true
-console.log("abB" < "aba"); // -> true
-console.log("aba" < "abb"); // -> true
-console.log("ab" < "ab4"); // -> true
+// console.log("b" > "a"); // -> true
+// console.log("a" > "B"); // -> true
+// console.log("B" > "A"); // -> true
+// console.log("A" > "4"); // -> true
+// console.log("4" > "1"); // -> true
+// console.log("ab1" < "ab4"); // -> true
+// console.log("ab4" < "abA"); // -> true
+// console.log("abB" < "aba"); // -> true
+// console.log("aba" < "abb"); // -> true
+// console.log("ab" < "ab4"); // -> true
 
 // typeof
-let year = 10191;
-console.log(typeof year); // -> number
-console.log(typeof false); // -> boolean
+// let year = 10191;
+// console.log(typeof year); // -> number
+// console.log(typeof false); // -> boolean
 
 // instanceof
-let names = ["Patti", "Bob"];
-let name = names[0];
-console.log(names instanceof Array); // -> true
-console.log(name instanceof Array); // -> false
+// let names = ["Patti", "Bob"];
+// let name = names[0];
+// console.log(names instanceof Array); // -> true
+// console.log(name instanceof Array); // -> false
 
 // ternary
-console.log(false ? "Alice" : "Bob"); // -> Alice
-console.log(true ? "Alice" : "Bob"); // -> Bob
+// console.log(false ? "Alice" : "Bob"); // 
+// console.log(true ? "Alice" : "Bob"); // 
+
+// function calculateOrder(userAge, hasParentsApproval, cartValue, points, addInsurance, hasPromoCode) 
+// {
+//     let orderIsValid = true
+//     let shippingCost = 40
+//     const INSURANCE_COST = 50
+
+//     if (userAge < 21 && !hasParentsApproval) 
+//     {
+//         orderIsValid = false
+//         shippingCost = 0
+//     }
+//     else if (userAge < 21 && hasParentsApproval) {
+//         shippingCost =shippingCost- 5;
+//     }
+//     // Rule 3: age 65 or more → free shipping
+//     else if (userAge >= 65) {
+//         shippingCost = 0;
+//     }
+//     // Rule 4: age between 21–64 with conditions → free shipping
+//     else if (userAge >= 21 && userAge <= 64 &&
+//              (hasParentsApproval || cartValue > 300 || points > 500)) {
+//         shippingCost = 0;
+//     }
+
+//     // Rule 5: add insurance cost
+//     if (addInsurance && orderIsValid && !hasPromoCode) {
+//         shippingCost += INSURANCE_COST;
+//     }
+
+//     return { orderIsValid, shippingCost };
+// }
+
+// Example test runs
+// console.log(calculateOrder(18, false, 200, 100, false, false)); // invalid, ₹0
+// console.log(calculateOrder(18, true, 200, 100, true, false));  // valid, ₹85
+// console.log(calculateOrder(70, false, 100, 50, false, false)); // valid, ₹0
+// console.log(calculateOrder(30, false, 350, 100, true, true));  // valid, ₹0
+
+
+
