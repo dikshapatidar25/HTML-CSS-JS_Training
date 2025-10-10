@@ -339,8 +339,115 @@
 // console.log("Even numbers count:", evenCount)
 
 
-let fruits = ["apple", "banana", "mango", "grape"]
-for(let i = fruits.length - 1; i >= 0; i--)
+// let fruits = ["apple", "banana", "mango", "grape"]
+// for(let i = fruits.length - 1; i >= 0; i--)
+// {
+// console.log(fruits[i])
+// }
+
+// Loops and arrays
+// let names = []
+// let isOver = false
+// while (!isOver)
+// {
+// let name = prompt("Enter another name or press cancel.")
+// if (name != null)
+//     {
+//     names.push(name)
+//     }
+// else
+//     {
+//     isOver = true
+//     }
+// }
+
+// for (let i = 0; i < names.length; i++)
+// {
+// console.log(names[i])
+// }
+
+// let values = [10, 30, 50, 100]
+// console.log("----Forward------")
+
+// for (let i = 0; i < values.length; i++)
+//     {
+//     console.log(values[i]); // -> 10, 30, 50, 100
+//     }
+
+// console.log("----Backward------")
+
+// for (let i = values.length - 1; i > 0; i--)
+//     {
+//     console.log(values[i]); // -> 100, 50, 30, 10
+//     }
+// console.log("----Altevative----")
+
+// for (let i = 0; i < values.length; i += 2)
+//     {
+//     console.log(values[i]); // -> 10, 50
+//     }
+
+
+// // for ... of :
+// let values = [10, 30, 50, 100]
+// let sum = 0;
+// for (let i = 0; i < values.length; i++)
+//     {
+//     sum += values[i]
+//     }
+// console.log(sum)
+
+// let values = [10, 30, 50, 100]
+// let sum = 0
+// for(let number of values)
+//     {
+//     sum += number;
+//     }
+// console.log(sum)
+
+
+// let cities = [
+// { name: "New York", population: 18.65e6 },
+// { name: "Cairo", population: 18.82e6 },
+// { name: "Mumbai", population: 19.32e6 },
+// { name: "São Paulo", population: 20.88e6 },
+// { name: "Mexico City", population: 21.34e6 },
+// { name: "Shanghai", population: 23.48e6 },
+// { name: "Delhi", population: 25.87e6 },
+// { name: "Tokyo", population: 37.26e6 }
+// ];
+// for (let city of cities)
+
+// {
+//     if(city.population>20e6)
+// console.log("city:"+city.name+" | Population:"+city.population)
+// }
+
+
+
+// let names = ["Alice", "Bob", "Charlie"]
+// for (let name of names)
+// {
+// console.log(name)
+// }
+
+// let fruits = ["apple", "banana", "mango"]
+// for (let fruit of fruits)
+// {
+// console.log(fruit)
+// }
+
+// for ... in:
+let user =
 {
-console.log(fruits[i])
+name: "Calvin",
+surname: "Hart",
+age: 66,
+email: "CalvinMHart@teleworm.us"
+}
+for(let key in user)
+{
+console.log("Key:",key)
+console.log("Value:",user[key])
+
 }

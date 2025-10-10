@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analytics Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Hello, I'm a B.Tech Data Analytics Student</h1>
+    <p>Passionate about data, insights & technology.</p>
+    <button onclick="downloadCV()">Download CV</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a B.Tech student specializing in Data Analytics. I enjoy working with data to uncover patterns and build meaningful solutions.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python (Pandas, NumPy)</li>
+      <li>SQL & Databases</li>
+      <li>Power BI / Tableau</li>
+      <li>Machine Learning Basics</li>
+      <li>HTML, CSS, JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Sales Dashboard</h3>
+      <p>Created a dashboard using Python & Power BI to analyze sales trends.</p>
+    </div>
+    <div class="project-item">
+      <h3>Customer Segmentation</h3>
+      <p>Performed clustering using machine learning to analyze customer patterns.</p>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Analytics with Python - IBM</li>
+      <li>SQL for Data Science - Coursera</li>
+    </ul>
+  </section>
+
+  <!-- Internships Section -->
+  <section id="internships" class="internships">
+    <h2>Internships</h2>
+    <p>Data Analyst Intern at XYZ Company - Worked on data cleaning & dashboard creation.</p>
+  </section>
+
+  <!-- Social Links -->
+  <section id="social" class="social">
+    <h2>Connect</h2>
+    <p><a href="https://github.com/yourusername" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Data Analytics Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
