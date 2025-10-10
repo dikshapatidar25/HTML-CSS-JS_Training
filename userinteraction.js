@@ -174,21 +174,23 @@
 //     alert("Winner!")
 //     }
 
-let number = 4
-switch (number)
-{
-    case 1:
-    console.log("One")
-    break
-    case 2:
-    console.log("Two")
-    break
-    case 3:
-    console.log("Three")
-    break
-    default:
-    console.log("Unknown number")
-}
+// let number = 4
+// switch (number)
+// {
+//     case 1:
+//     console.log("One")
+//     break
+//     case 2:
+//     console.log("Two")
+//     break
+//     case 3:
+//     console.log("Three")
+//     break
+//     default:
+//     console.log("Unknown number")
+// }
+
+// Control Flow- Loop
 
 // console.log(total)
 // console.log(0)
@@ -213,6 +215,9 @@ switch (number)
 // n += 10
 // console.log(n)
 // n += 10
+
+
+// while loop
 
 // let n = 0;
 // while(n < 91)
@@ -249,3 +254,93 @@ switch (number)
 // index++
 // }
 // console.log(fruits.join(" "))
+
+// let num = 2
+// let str=" "
+// while (num <= 20)
+//     {
+  
+//     num += 2
+//     str +=num
+//     str+=" "
+//     }
+// console.log(str)
+
+
+// let num=20
+// while(num >=1)
+// {
+//     console.log("Num:",num)
+//     num -=2
+// }
+
+//The do ... while loop
+// let isOver
+// let counter = 1
+// do
+//     {
+
+//     isOver = !confirm('[${counter++}] Continue the loop?')
+
+//     }
+// while (!isOver)
+
+// let condition = false;
+// while(condition)
+//     {
+
+//     console.log("A while loop iteration.") // never executed
+
+//     }
+// do
+//     {
+
+//     console.log("A do ... while loop iteration.") // executed once
+
+//     }
+// while (condition)
+//     console.log("Out of the loop")
+
+
+// let text = "Divya"
+// let i = 0
+// do
+//     {
+//     console.log(text[i])
+//     i++
+//     }
+// while (i < text.length)
+
+
+// for loop
+// for (let i = 0; i < 10; i++)
+//     {
+//     console.log(i)
+//     }
+
+// let values = [10, 30, 50, 100]
+// let sum = 0
+// for(let index = 0; index < 4; index++)
+// {
+// sum += values[index]
+// console.log(sum)
+// }
+// console.log(sum)// 190
+
+// let numbers = [2, 5, 8, 11, 14]
+// let evenCount = 0
+// for (let i = 0; i < numbers.length; i++)
+// {
+// if(numbers[i] % 2 === 0)
+// {
+// evenCount++
+// }
+// }
+// console.log("Even numbers count:", evenCount)
+
+
+let fruits = ["apple", "banana", "mango", "grape"]
+for(let i = fruits.length - 1; i >= 0; i--)
+{
+console.log(fruits[i])
+}
