@@ -437,17 +437,90 @@
 // console.log(fruit)
 // }
 
-// for ... in:
-let user =
-{
-name: "Calvin",
-surname: "Hart",
-age: 66,
-email: "CalvinMHart@teleworm.us"
-}
-for(let key in user)
-{
-console.log("Key:",key)
-console.log("Value:",user[key])
 
+
+// for ... in:
+
+// let user =
+// {
+// name: "Calvin",
+// surname: "Hart",
+// age: 66,
+// email: "CalvinMHart@teleworm.us"
+// }
+// for(let key in user)
+// {
+// console.log("Key:",key)
+// console.log("Value:",user[key])
+
+// }
+
+// let user = { name: "Swati", age: 25 }
+// for (let key in user)
+//     {
+//     console.log(`${key}: ${user[key]}`)
+//     }
+
+// const array1 = ["a", "b", "c"]
+// for (const element of array1)
+// {
+
+// console.log(element)
+
+// }
+
+
+
+
+// Break and Continue
+
+// let i =0
+// while(true)
+// {
+//     console.log(i)
+//     i++
+//     console.log("...")
+//     if(i>=5)
+//     {
+//         console.log("now Braking")
+//         break
+//         console.log("breaked now")
+
+//     }
+// }
+// console.log("Ecited the lop with break")
+
+
+// for(let i=0; i<10;i++)
+// {
+//     if(i==3)
+//     {
+//         continue
+//     }
+//     console.log("i:",i)
+// }
+
+
+// let fruits = ["apple", "banana", "mango", "orange", "grapes"];
+// for (let i = 0; i < fruits.length; i++)
+// {
+// if (fruits[i] === "mango")
+
+//     {
+
+//     console.log("Mango found at index " + i);
+//     break
+
+//     }
+//     console.log("Fruit:",fruits[i])
+// }
+// console.log("outide the loop!")
+
+for (let i = 1; i <= 10; i++)
+{
+if (i % 2 !== 0)
+    {
+    continue;
+    }
+console.log(i);
 }
