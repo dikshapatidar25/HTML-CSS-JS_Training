@@ -516,11 +516,240 @@
 // }
 // console.log("outide the loop!")
 
-for (let i = 1; i <= 10; i++)
+// for (let i = 1; i <= 10; i++)
+// {
+// if (i % 2 !== 0)
+//     {
+//     continue;
+//     }
+// console.log(i)
+// }
+
+
+
+// // Function
+// let temperatures
+// let sum
+// let meanTemp
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17,
+//  16]
+// sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length;
+// console.log(`mean: ${meanTemp}`)
+// console.log("-------------")
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18,
+// 17, 16]
+// sum = 0
+// for (let i = 0; i < temperatures.length; i++) {
+// sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length
+// console.log(`mean: ${meanTemp}`)
+
+// Declaring functions
+// let temperatures;
+// let sum;
+// let meanTemp;
+// function getMeanTemp()
+// {
+// sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// meanTemp = sum / temperatures.length;
+// }
+// console.log(meanTemp)
+
+// Calling functions :
+// showName()
+// function showName()
+// {
+// console.log(name)
+// }
+// let name = "Alice"
+
+// let temperatures
+// let sum
+// let meanTemp
+// function getMeanTemp() {
+// sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// meanTemp = sum / temperatures.length;
+// }
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21,
+// 20, 19, 17, 16];
+// getMeanTemp();
+// console.log('mean: ${meanTemp}',meanTemp);
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21,
+// 19, 18, 17, 16];
+// getMeanTemp();
+// console.log('mean: ${meanTemp}',meanTemp)
+
+
+
+// function welcomeMsg(name)
+// {
+// return ("Hello " + name + " welcome to Uraan");
+// }
+// let nameVal = "User"
+// console.log(welcomeMsg(nameVal))
+// function sayHello()
+// {
+// console.log("Hello, world!");
+// }
+// console.log("About to call the function...");
+// sayHello();
+// console.log("Function call finished.");
+// function showMessage()
+// {
+// alert( 'Hello everyone!' );
+// }
+// showMessage()
+
+
+// Functions - Local variables
+// let temperatures
+// let meanTemp
+// function getMeanTemp()
+//     {
+//     let sum = 0
+//     for (let i = 0; i < temperatures.length; i++)
+//     {
+//     sum += temperatures[i]
+//     }
+//     meanTemp = sum / temperatures.length
+//     }
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23,
+// 21, 20, 19, 17, 16]
+// getMeanTemp()
+// console.log(`mean: ${meanTemp}`)
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26,
+// 24, 21, 19, 18, 17, 16]
+// getMeanTemp()
+// console.log(`mean: ${meanTemp}`)
+
+
+// function getMeanTemp(temperatures)
+// {
+// let sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// return sum / temperatures.length;
+// }
+// let result = getMeanTemp([12, 13, 14])
+// console.log(`mean: ${result}`)
+
+// let userName = 'John'
+// function showMessage()
+// {
+// let message = 'Hello, ' + userName;
+// alert(message)
+// }
+// showMessage()
+
+
+
+// The return statement :
+// function showMsg()
+// {
+// console.log("message 1");
+// return
+// console.log("message 2");
+// }
+// showMsg()
+
+
+// function getTrue()
+// {
+// return true;
+// }
+// let test = getTrue()
+// console.log(test);
+
+// let temperatures;
+// let meanTemp;
+// function getMeanTemp() {
+// let sum = 0;
+// let result;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// result = sum / temperatures.length;
+// return result;
+// }
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21,
+// 20, 19, 17, 16];
+// meanTemp = getMeanTemp();
+// console.log('mean: ${meanTemp}');
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24,
+// 21, 19, 18, 17, 16];
+// meanTemp = getMeanTemp();
+// console.log('mean: ${meanTemp}')
+
+
+// function getMeanTemp()
+// {
+// let sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// return sum / temperatures.length
+// }
+
+
+// function getTrue()
+// {
+// return true;
+// }
+// let test = getTrue();
+// console.log(test);
+
+
+// function showMsg()
+// {
+// console.log("This will be displayed.");
+// return;
+// console.log("This will NEVER be displayed.");
+// }
+// showMsg()
+
+
+// Parameters
+// function add(first, second)
+// {
+// return first + second;
+// }
+// let result = add(5, 7)
+// console.log(result)
+
+// let names = ["Alice", "Bob", "Eve", "John"];
+// let name = getElement(names, 2)
+// console.log(name)
+
+function getMeanTemp(temperatures)
 {
-if (i % 2 !== 0)
-    {
-    continue;
-    }
-console.log(i);
+let sum = 0;
+for (let i = 0; i < temperatures.length; i++)
+{
+sum += temperatures[i];
 }
+return sum / temperatures.length;
+}
+let day1 = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23,
+25, 25, 23, 21, 20, 19, 17, 16];
+console.log(`mean: ${getMeanTemp(day1)}`);
+let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29,
+29, 27, 26, 24, 21, 19, 18, 17, 16];
+console.log(`mean: ${getMeanTemp(day2)}`);
