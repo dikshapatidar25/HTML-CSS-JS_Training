@@ -738,18 +738,210 @@
 // let name = getElement(names, 2)
 // console.log(name)
 
-function getMeanTemp(temperatures)
+// function getMeanTemp(temperatures)
+// {
+// let sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+// {
+// sum += temperatures[i];
+// }
+// return sum / temperatures.length;
+// }
+// let day1 = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23,
+// 25, 25, 23, 21, 20, 19, 17, 16];
+// console.log(`mean: ${getMeanTemp(day1)}`);
+// let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29,
+// 29, 27, 26, 24, 21, 19, 18, 17, 16];
+// console.log(`mean: ${getMeanTemp(day2)}`)
+
+// Shadowing
+// function add(first, second)
+// {
+// return first + second;
+// }
+// let first = 10, second = 20, third = 40, fourth = 80;
+// console.log(add(first, second))
+// console.log(add(second, third))
+// console.log(add(third, fourth))
+
+// let a = 100, b = 200, c = 300;
+// function test(a)
+// {
+// let b = 10;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// }
+// test(1);
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// Functions as first-class members 
+
+// function showMessage(message)
+// {
+// console.log('Message: ${message}')
+// }
+// let sm = showMessage
+// sm("This works!"); // -> Message: This works!
+// console.log(typeof sm); // -> function
+
+
+// function doNothing()
+// {
+// return undefined;
+// }
+// let a = doNothing(); // assign result of function call
+// let b = doNothing; // assign a function
+// console.log(typeof a); // -> undefined
+// console.log(typeof b); // -> function
+
+// function add(a, b)
+// {
+// return a + b
+// }
+// function multiply(a, b)
+// {
+// return a * b
+// }
+// function operation(func, first, second)
+// {
+// return func(first, second)
+// }
+// console.log(operation(add, 10, 20))
+// console.log(operation(multiply, 10, 20))
+
+// Function Expression:
+// function add(a, b)
+// {
+// return a + b
+// }
+// let myAdd = add;
+// console.log(myAdd(10, 20))
+// console.log(add(10, 20))
+
+// let myAdd = function(a, b)
+// {
+// return a + b;
+// }
+// console.log(myAdd(10, 20))
+
+// function operation(func, first, second)
+// {
+// return func(first, second);
+// }
+// let myAdd = function(a, b)
+// {
+// return a + b
+// }
+// console.log(operation(myAdd, 10, 20));
+// console.log(operation(function(a, b)
+// {
+// return a * b;
+// }, 10, 20))
+
+// // Parameters validation :
+// function getMeanTemp(temperatures)
+// {
+// if (!(temperatures instanceof Array))
+
+// {
+
+// return NaN;
+// }
+// let sum = 0;
+// for (let i = 0; i < temperatures.length; i++)
+
+// {
+
+// sum += temperatures[i];
+
+// }
+
+// return sum / temperatures.length;
+// }
+// console.log(getMeanTemp([10, 20, 30]));
+// console.log(getMeanTemp("not an array"))
+
+
+// // Callbacks :
+// function addNumbers(a, b)
+// {
+// if (typeof a !== "number" || typeof b !== "number")
+
+// {
+
+// return "Invalid input: numbers expected";
+// }
+// return a + b;
+// }
+// console.log(addNumbers(5, 7));
+// console.log(addNumbers("5", 7));
+
+// let inner = function()
+// {
+//     console.log('inner 1');
+// }
+// let outer = function(callback)
+// {
+//     console.log('outer 1');
+
+//     callback();
+//     console.log('outer 2');
+// }
+// console.log('test 1');
+// outer(inner);
+// console.log('test 2');
+
+// function calculate(a, b, operation)
+// {
+
+// return operation(a, b)
+
+// }
+// function add(x, y)
+// {
+
+// return x + y
+
+// }
+// function subtract(x, y)
+// {
+
+// return x - y
+
+// }
+// console.log(calculate(5, 3, add))
+// console.log(calculate(5, 3, subtract))
+
+
+// Asynchronous callbacks   setTimeout – Delayed Callback :
+// console.log("Start")
+// setTimeout(function()
+// {
+
+// console.log("This runs after 1 second")
+
+// }, 1000);
+// console.log("End")
+
+// setInterval – Repeated Asynchronous Callback :
+// let counter = 0;
+// console.log("Start")
+// let intervalId = setInterval(function()
+// {
+// console.log("Repeating:", ++counter);
+// }, 1000);
+// setTimeout(function()
+// {
+// clearInterval(intervalId);
+// console.log("Stopped");
+// }, 5500);
+// console.log("End")
+
+window.addEventListener("click", function()
 {
-let sum = 0;
-for (let i = 0; i < temperatures.length; i++)
-{
-sum += temperatures[i];
-}
-return sum / temperatures.length;
-}
-let day1 = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23,
-25, 25, 23, 21, 20, 19, 17, 16];
-console.log(`mean: ${getMeanTemp(day1)}`);
-let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29,
-29, 27, 26, 24, 21, 19, 18, 17, 16];
-console.log(`mean: ${getMeanTemp(day2)}`);
+console.log("clicked!");
+})
+
