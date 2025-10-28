@@ -787,7 +787,6 @@
 // sm("This works!"); // -> Message: This works!
 // console.log(typeof sm); // -> function
 
-
 // function doNothing()
 // {
 // return undefined;
@@ -940,8 +939,64 @@
 // }, 5500);
 // console.log("End")
 
-window.addEventListener("click", function()
-{
-console.log("clicked!");
-})
+// window.addEventListener("click", function()
+// {
+// console.log("clicked!");
+// })
 
+// Arrow functions:
+
+//Filter function 
+// let array =[1,2,3,4,5,6,7,8,9,10]
+// let evenArray = array.filter(function(element)
+// {
+//     if(element%2 !==0)
+//     {
+//         return true
+//     }
+//     return false
+// })
+// console.log(array)
+// console.log(evenArray)
+
+// let array = ["Aditya","sandeep","Diksha","George","Chandresh","Anjali"]
+
+// let result = array.filter(function(name) 
+// {
+//   return name !== "Aditya" && name !== "Diksha" && name !== "Chandresh";
+// })
+
+// console.log(result)
+
+// Map Function
+// let array = ["Aditya","sandeep","Diksha","George","Chandresh","Anjali"]
+
+// let newArray = array.map(function(elemnet)
+// {
+//     if (elemnet==="Aditya")
+//         return"Aditya Gupta"
+//     return elemnet+"__"
+
+// })
+// console.log(array)
+// console.log(newArray)
+
+
+// let array = [10, 20, 30, 40, 50, 60];
+
+// let newArray = array.map(function(element) 
+// {
+  
+//         return element +2     // Modify one specific number (like "Aditya" before)
+// })
+
+// console.log(array)
+// console.log(newArray)
+
+function sum(a,b)
+{
+        return a+b
+}
+console.log(sum(5,3))
+let newSum = (a,b) => a+b
+console.log(newSum(5,4))
