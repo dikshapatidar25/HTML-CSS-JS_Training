@@ -40,92 +40,107 @@
 
 
 
-// ---------Scenario based question--------
+// // ---------Scenario based question--------
 
-let contacts = [
-  { name: "Khushi", phone: "9876543210", email: "khushi@gmail.com" },
-  { name: "Diksha", phone: "9002345680", email: "diksha@gmail.com" },
-  { name: "Anjali", phone: "8188776655", email: "anjali@gmail.com" },
-  { name: "Payal", phone:  "7788775855", email: "payal@gmail.com" }
-];
+// let contacts = [
+//   { name: "Khushi", phone: "9876543210", email: "khushi@gmail.com" },
+//   { name: "Diksha", phone: "9002345680", email: "diksha@gmail.com" },
+//   { name: "Anjali", phone: "8188776655", email: "anjali@gmail.com" },
+//   { name: "Payal", phone:  "7788775855", email: "payal@gmail.com" }
+// ];
 
-// ---------------------------------------------
-function showContact(contactList, index) 
-{
-  if (!(contactList instanceof Array)) 
-    {
-    console.log(" contact list must be an array!")
-    return
-    }
+// // ---------------------------------------------
+// function showContact(contactList, index) 
+// {
+//   if (!(contactList instanceof Array)) 
+//     {
+//     console.log(" contact list must be an array!")
+//     return
+//     }
 
-  if (index < 0 || index >= contactList.length)
-     {
-    console.log("invalid contact index!")
-    return
-    }
+//   if (index < 0 || index >= contactList.length)
+//      {
+//     console.log("invalid contact index!")
+//     return
+//     }
 
-  let contact = contactList[index]
-  console.log(`Contact:${index + 1}`)
-  console.log(`Name: ${contact.name}`)
-  console.log(`Phone: ${contact.phone}`)
-  console.log(`Email: ${contact.email}`)
-  console.log("---------------------------")
-}
+//   let contact = contactList[index]
+//   console.log(`Contact:${index + 1}`)
+//   console.log(`Name: ${contact.name}`)
+//   console.log(`Phone: ${contact.phone}`)
+//   console.log(`Email: ${contact.email}`)
+//   console.log("---------------------------")
+// }
 
 
 
-function showAllContacts(contactList) 
-{
-  if (!(contactList instanceof Array))
-  {
-    console.log("contact list must be an array!")
-    return
-  }
+// function showAllContacts(contactList) 
+// {
+//   if (!(contactList instanceof Array))
+//   {
+//     console.log("contact list must be an array!")
+//     return
+//   }
 
-  console.log(" All Contacts:")
+//   console.log(" All Contacts:")
   
 
-  for (let i = 0; i < contactList.length; i++) 
-    {
-    let c = contactList[i]
-    console.log(`${i + 1}. ${c.name} - ${c.phone} - ${c.email}`)
-    } 
-}
- console.log("---------------------------")
+//   for (let i = 0; i < contactList.length; i++) 
+//     {
+//     let c = contactList[i]
+//     console.log(`${i + 1}. ${c.name} - ${c.phone} - ${c.email}`)
+//     } 
+// }
+//  console.log("---------------------------")
 
-function addNewContact(contactList, name, phone, email) 
+// function addNewContact(contactList, name, phone, email) 
+// {
+//     if (!(contactList instanceof Array))
+//       {
+//       console.log(" contact list must be an array!")
+//       return
+//       }
+
+//   if (!name || !phone || !email)
+//     {
+//     console.log(" please provide name, phone, and email!")
+//     return
+//     }
+
+//   let newContact = { name: name, phone: phone, email: email }
+
+
+//   contactList.push(newContact)
+//   console.log(`New contact added: ${name}`)
+// }
+
+
+// showAllContacts(contacts)
+//  console.log("---------------------------")
+
+
+// console.log("Adding a new contact...")
+// addNewContact(contacts, "Ekta", "9090909090", "Ekta@gmail.com")
+//  console.log("---------------------------")
+
+// console.log("Updated Contact List:")
+// showAllContacts(contacts)
+// console.log("---------------------------")
+
+// console.log("Show Contact at Index 3:")
+// showContact(contacts, 3)
+
+
+// -------Question 3----------
+function countdown(n) 
 {
-    if (!(contactList instanceof Array))
-      {
-      console.log(" contact list must be an array!")
-      return
-      }
-
-  if (!name || !phone || !email)
+  if (n <= 0) 
     {
-    console.log(" please provide name, phone, and email!")
     return
     }
-
-  let newContact = { name: name, phone: phone, email: email }
-
-
-  contactList.push(newContact)
-  console.log(`New contact added: ${name}`)
+  console.log(n) 
+  countdown(n - 1)
 }
 
-
-showAllContacts(contacts)
- console.log("---------------------------")
-
-
-console.log("Adding a new contact...")
-addNewContact(contacts, "Ekta", "9090909090", "Ekta@gmail.com")
- console.log("---------------------------")
-
-console.log("Updated Contact List:")
-showAllContacts(contacts)
-console.log("---------------------------")
-
-console.log("Show Contact at Index 3:")
-showContact(contacts, 3)
+let num = Number(prompt("Enter a number:"))
+countdown(num)

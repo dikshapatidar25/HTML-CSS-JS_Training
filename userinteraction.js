@@ -968,7 +968,11 @@
 
 // console.log(result)
 
+
 // Map Function
+
+//// Map Function
+
 // let array = ["Aditya","sandeep","Diksha","George","Chandresh","Anjali"]
 
 // let newArray = array.map(function(elemnet)
