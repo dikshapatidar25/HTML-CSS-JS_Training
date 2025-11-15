@@ -997,10 +997,277 @@
 // console.log(array)
 // console.log(newArray)
 
-function sum(a,b)
+// function sum(a,b)
+// {
+//         return a+b
+// }
+// console.log(sum(5,3))
+// let newSum = (a,b) => a+b
+// console.log(newSum(5,4))
+
+// // Arrow Function
+// let names = ['Alice', 'Eve', 'John'];
+// function showName(element)
+// {
+
+// console.log(element);
+
+// }
+// names.forEach(showName); // -> Alice, Eve, John
+
+
+// let multiply = (a, b) => a * b
+// console.log(multiply(4, 3))
+// let add = (a, b) =>
+// {
+// let result = a + b
+// return result
+// }
+// console.log(add(10, 5))
+
+// let square = x => x * x;
+// console.log(square(5));
+
+
+// // RECURSION
+// function factorial(n)
+// {
+// return n > 1 ? n * factorial(n - 1) : 1
+// }
+// console.log(factorial(5))
+
+
+// MODULE 6
+// ERROR AND EXCEPTION
+// let multiply = (a, b) => a + b;
+// let result = multiply(10, 20);
+// console.log(result)
+
+// try...catch:
+// try
+// {
+// console.log('abc');
+// conole.log('abc');
+// }
+// catch (error)
+// {
+// console.log(error.message);
+// }
+
+// try
+// {
+// console.log("Start");
+// conole.log("Oops!");
+// console.log("This won't run");
+// }
+// catch (error)
+// {
+// console.log("Caught an error:");
+// console.log(error.message);
+// }
+// console.log("Program continues...")
+
+
+
+// ///Errors without exceptions:
+
+// console.log(100 / 0); // -> Infinity
+// console.log(100 * "2"); // -> 200
+// console.log(100 * "abc"); // -> NaN
+// console.log(Math.pow("abc", "def")); // -> NaN
+
+// let result = 100 / 0
+// console.log(result)
+
+// let value = 100 * "xyz"
+// if (isNaN(value))
+// {
+// console.log("Error: Result is not a number.")
+// }
+
+// let array =1
+// if (array instanceof Array)
+// {
+//     console.log("Yes, we got the Array")
+
+// }
+// else{
+//     console.log("Error:Not an Array!!!")
+// }
+// console.log("Yes, we got the Array")
+
+
+
+// The try ... catch statement - Examples:
+// let a=-2;
+// try{
+//     a=-2
+// }
+// catch(error)
+// {
+//     if(error instanceof ReferenceError){
+//         console.log("Reference Error, reset a to -2")
+
+//     }
+// else
+// {
+//     console.log("Other error-"+error);
+// }
+// }
+// console.log(a)
+
+// let a = 10;
+// try
+// {
+// a = 5;
+// }
+// finally
+// {
+// console.log("finally",a);
+// }
+// console.log("Outside",a);
+
+// let a = 10;
+// try
+// {
+// a = b; // ReferenceError
+// }
+// catch (error)
+// {
+// console.log("An Error!")
+// }
+// finally
+// {
+// console.log("Finally!")
+// }
+// console.log("otside",a)
+
+// let a = 10;
+// try
+// {
+//     a = b
+// }
+// catch (error)
+// {
+//     try
+//     {
+//         console.log(b);
+//     }
+// catch(error2)
+//     {
+//         console.log("Second catch!",error2);
+//     }
+// }
+// finally
+// {
+//     console.log("Finally!");
+// }
+
+
+
+// console.log("start");
+// try
+// {
+// throw 100;
+// }
+// catch (error)
+// {
+// console.log(error);
+// }
+// console.log("end");
+
+
+
+
+// console.log("start");
+// throw 100;
+// console.log("end")
+
+// console.log("start");
+// throw ReferenceError("This is my custom Reference eror");
+// console.log("end")
+
+// function factorial(n)
+// {
+// let result = 1;
+// for (; n > 1; n--)
+// {
+// result = result * n;
+// }
+// return result;
+// }
+// console.log(factorial(3));
+// console.log(factorial(5));
+// console.log(factorial(8));
+// console.log(factorial(20));
+// console.log(factorial(1000));
+
+// function factorial(n)
+// {
+// if (n > 20)
+// {
+// throw new RangeError("Max value 20");
+// }
+// let result = 1;
+// for (; n > 1; n--)
+// {
+// result = result * n;
+// }
+// return result;
+// }
+// console.log(factorial(20));
+// console.log(factorial(1000));
+
+
+
+// Testing and debugging your code :
+// function average(a, b)
+// {
+// return a + b / 2;
+// }
+// console.log(average(2, 10));
+// console.log(average(5, 5));
+
+
+// function largest(a, b, c)
+// {
+// if (a > b && a > c)
+// {
+// return a;
+// }
+// else if (b > a && b > c)
+// {
+// return b;
+// }
+// else
+// {
+// return c;
+// }
+// }
+
+// console.log(largest(1, 1, 2));
+// console.log(largest(1, 2, 3));
+// console.log(largest(3, 2, 1));
+// console.log(largest(2, 2, 1));
+
+
+// DEBUGGING
+// console.log("Before debugger");
+// debugger;
+// console.log("After debugger");
+
+
+function outer()
 {
-        return a+b
+let name = "outer";
+let str = inner();
+return str;
 }
-console.log(sum(5,3))
-let newSum = (a,b) => a+b
-console.log(newSum(5,4))
+function inner()
+{
+let name = "inner";
+return "Hello !";
+}
+console.log("before outer() call");
+console.log(outer());
+console.log("after outer() call");

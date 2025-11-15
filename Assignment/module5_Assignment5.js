@@ -142,5 +142,5 @@ function countdown(n)
   countdown(n - 1)
 }
 
-let num = Number(prompt("Enter a number:"))
+let num =Number(prompt("Enter a number:"));
 countdown(num)
