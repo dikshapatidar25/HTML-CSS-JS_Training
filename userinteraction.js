@@ -1257,17 +1257,132 @@
 // console.log("After debugger");
 
 
-function outer()
+// function outer()
+// {
+// let name = "outer";
+// let str = inner();
+// return str;
+// }
+// function inner()
+// {
+// let name = "inner";
+// return "Hello !";
+// }
+// console.log("before outer() call");
+// // debugger;
+// console.log(outer());
+// console.log("after outer() call");
+
+
+
+
+// MEASURING CODE EXECUTION TIME
+// let part = 0;
+// console.time('Leibniz');
+// for (let k = 0; k < 10000000; k++)
+// {
+// part = part + ((-1) ** k) / (2 * k + 1);
+// }
+// console.timeEnd('Leibniz'); // -> Leibniz: 456.60498046875 ms
+// let pi = part * 4;
+// console.log(pi); // -> 3.1415925535897915
+
+
+// TROUBLESHOTTING
+// let end = 2;
+// for(let i=1; i<end; i++)
+
+// {
+//     debugger;
+//    console.log(i);
+//  }
+
+// let counter = 0;
+// let maxValue = 10;
+// let result = 1;
+// debugger;
+// for (counter = 0; counter < maxValue; counter++)
+// {
+//     console.log(result);
+//     result *= maxValue - counter - 1;
+// }
+// console.log("Final result: ", result);
+
+
+// // MODULE 7 CLASSES AND OBJECT
+// console.log(typeof 2.5);
+// console.log(typeof "one two three");
+// console.log(typeof false);
+
+// let nr = 2.5;
+// nr = nr / 2;
+// console.log(typeof nr);
+
+
+// let a = [10, 20, "en to tre", true, 50];
+// a[4] = a[4] * 2;
+// console.log(a[0]);
+// console.log(a[2]);
+// console.log(a[4]);
+
+// let sampleObject =
+// {
+// id: 10,
+// delay: 20,
+// name: "en to tre",
+// isPresent: true,
+// delay: 50
+// };
+// sampleObject.delay = sampleObject.delay * 2;
+// console.log(sampleObject.id);
+// console.log(sampleObject.name);
+// console.log(sampleObject.delay);
+
+
+//  let contact={}
+// console.log("Contact: ",contact)
+// console.log(typeof contact)
+// contact.tel= "2034567473385"
+// console.log(contact)
+// console.log(contact.tel)
+// console.log("Contact: ",contact)
+// console.log(typeof contact)
+
+// contact["#code"]= 1234
+// console.log(contact["#code"])  // Flexibility
+
+// contact["email.work"]="abc@work.com"
+// contact["email.personal"]="def@work.com"
+
+// console.log(contact["email.work"])
+// console.log(contact["email.personal"])
+
+// contact["first name"]= "Additya"
+// console.log(contact["first name"])
+
+// let contact =
+// {
+// email_1: "RonaldSMurphy@freepost.org",
+// email_2: "rsmurphy@briazz.com"
+// };
+// for(i=1; i<=2; i++)
+// {
+// let key = "email_" + i;
+// console.log(key);
+// console.log(contact[key]);
+// }
+
+let contact= {}
+let email = prompt("Enter email...")
+let count=1
+while(email)
 {
-let name = "outer";
-let str = inner();
-return str;
+    contact["email_"+count]= email
+    count++
+    email = prompt("Enter email...")
 }
-function inner()
+console.log("contact",contact)
+for(let count1 =1; count1<=Object.keys(contact).length; count1++)
 {
-let name = "inner";
-return "Hello !";
+    console.log(contact["email_"+count1])
 }
-console.log("before outer() call");
-console.log(outer());
-console.log("after outer() call");
