@@ -1372,17 +1372,393 @@
 // console.log(contact[key]);
 // }
 
-let contact= {}
-let email = prompt("Enter email...")
-let count=1
-while(email)
-{
-    contact["email_"+count]= email
-    count++
-    email = prompt("Enter email...")
-}
-console.log("contact",contact)
-for(let count1 =1; count1<=Object.keys(contact).length; count1++)
-{
-    console.log(contact["email_"+count1])
-}
+// let contact= {}
+// let email = prompt("Enter email...")
+// let count=1
+// while(email)
+// {
+//     contact["email_"+count]= email
+//     count++
+//     email = prompt("Enter email...")
+// }
+// console.log("contact",contact)
+// for(let count1 =1; count1<=Object.keys(contact).length; count1++)
+// {
+//     console.log(contact["email_"+count1])
+// }
+
+
+
+
+// Enumeration "for ... in" Example:
+// let contact =
+// {
+//     tel: "207-662-5412",
+//     email: "RonaldSMurphy@freepost.org"
+// };
+//     for(x in contact)
+// {
+// // print property name
+//     console.log(x);
+// }
+// console.log (x+": "+contact[x])
+
+// // The Object.keys method:
+// let propArray = Object.keys(contact)
+// console.log("propArray:",propArray)
+
+// contact.tel = "+91 9856258645"
+// console.log("contact.tel:",contact.tel)
+// contact.name = "Payal"
+// console.log("contact.name:",contact.name)
+
+
+// var point1 = {x: 10, y: 20};
+// var point2 = {x: 10, y: 20};
+// console.log(point1 === point2);
+// let point3 = point1;
+// console.log(point1 === point3);    
+// point1.x=30
+// console.log("point1.x:" , point1.x);  
+// console.log("point3.x:" ,point3.x);    
+
+
+// let point0 = {x:10, y: 20 };
+// let point1 = point0; // copy reference
+// let point2 = {};
+// Object.assign(point2, point0); // copy properties into the new object
+// console.log(point2.x);
+// console.log(point2.y);
+// console.log(point1 === point0); // true
+// console.log(point1 === point2); // false
+
+
+// point1.x=30
+// point1.y=50
+// console.log("point1.x:",point1.x)
+// console.log("point1.x:",point1.x)
+// console.log("point2.y:",point1.y)
+// console.log("point2.y:",point1.y)
+
+// console.log(point1 === point0); // true
+// console.log(point1 === point2); // false
+
+// let point3 = {};
+// Object.assign(point3, point0, {z: 100})
+// console.log(point3.x)
+// console.log(point3.y)
+// console.log(point3.z)
+// console.log("point3:",point3); 
+
+
+// let point4 = {};
+// Object.assign(point4, point3, {z: 120});
+// console.log("point4:",point4); 
+
+// let reallyEmptyObject = Object.create(null);
+// console.log("reallyEmptyObject :",reallyEmptyObject)
+// console.log(typeof reallyEmptyObject.constructor);
+
+
+
+// let point = {
+//     x:0,
+//      y:0
+//      printX()
+//      {
+
+//      }
+
+// let coloredPoint = {color: "red"};
+// console.log("point:",point)
+// console.log("point.__proto__:",point.__proto__)
+// console.log("coloredPoint:",coloredPoint)
+// console.log("coloredPoint.__proto__:",coloredPoint.__proto__)
+// console.log("Before changing proto of colouredPoint object:")
+// console.log("coloredPoint.x:",coloredPoint.x)
+// coloredPoint.__proto__ = point;
+
+// console.log("point:",point)
+// console.log("point.__proto__:",point.__proto__)
+// console.log("coloredPoint:",coloredPoint)
+// console.log("coloredPoint.__proto__:",coloredPoint.__proto__)
+
+
+
+// console.log("object.getOwnPropertynmaes(coloredPoint):",Object.getOwnPropertyNames(coloredPoint))
+// console.log("coloredPoint.color:",coloredPoint.color)
+// console.log("coloredPoint.x:",coloredPoint.x)
+
+// coloredPoint.x = 100; // new property
+// console.log(coloredPoint.x);
+// console.log(point.x);
+// console.log(Object.getOwnPropertyNames(coloredPoint));
+
+// point.y = 200;
+// console.log(coloredPoint.y);
+// console.log(point.y);
+// console.log(point.printX())
+// console.log(coloredPoint.printX())
+
+// figure =
+// {
+// getType: function()
+// {
+//     return this.type ? this.type : "unknown";
+// }
+// };
+// let circle =
+// {
+//     type: "circle",
+//     center: {x:0, y:0},
+//     radius: 100
+// };
+// circle.__proto__ = figure;
+
+// let proto=Object.getPrototypeOf(circle)
+// console.log("proto of circle:",proto)
+// Object.setPrototypeOf(circle,figure)
+// proto = Object.getPrototypeOf(circle)
+// console.log("proto of circle:",proto)
+// console.log(circle.getType())
+
+// class ABC
+// {
+//     a
+// }
+// class DEF extends ABC{
+//     b
+// }
+// class GHI extends DEF
+// {
+//     c
+// }
+// let abc =new ABC()
+// let def =new DEF()
+// let ghi =new GHI()
+
+// console.log("abc instanceof ABC:",abc instanceof ABC)
+// console.log("abc instanceof DEF:",def instanceof DEF)
+// console.log("abc instanceof GHI:",ghi instanceof GHI)
+
+// console.log("abc instanceof DEF:",ghi instanceof DEF)
+// console.log("abc instanceof ABC:",ghi instanceof ABC)
+// console.log("abc instanceof object:",abc instanceof Object)
+
+// console.log("def instanceof GHI:",def instanceof GHI)
+
+// console.log(abc.a)
+// abc.a=24
+// console.log()
+
+// Destructor
+// let myObject ={
+//     a:1,
+//     b: 2,
+//     c:"c"
+// }
+// console.log("myObject:",myObject)
+// console.log("a:",myObject.a)
+// console.log("b:",myObject.b)
+// console.log("c:",myObject.c)
+
+// let{a,c} = myObject 
+//  console.log("a:",a)
+//   console.log("c:",c)
+
+
+
+
+// class Vehicle
+// {
+//     id
+//     position
+//     status
+//     time
+//     #latitude
+//     #longitude
+
+//     constructor({id, latitude,longitude})
+//     {
+//         this.id = id
+//         this.position= {latitude,longitude}
+//         this.status = "unavailable"
+//     }
+//     set position({latitude,longitude})
+//     {
+//         console.log("setting position values!")
+//         this.time = Date.now()
+//         this.#longitude = longitude
+//         this.#latitude = latitude
+//     }
+//     get position()
+//     {
+//         console.log("Getting Position now!")
+//         return{
+//             latitude: this.latitude,
+//             longitude: this.longitude
+//         }
+//     }
+// }
+
+// print()
+// {
+//     console.log("id:",this.id)
+//     console.log("Position:",this.position)
+//     console.log("Time:",this,time)
+
+// }
+
+// let vehicle= new Vehicle({longitude:18.21345,latitude:59.367628,id:"AL1024"})
+// vehicle.position = {longitude:18.21345,latitude:59.367628}
+// console.log("Vechicle:",vechicle.position)
+// console.log("_---------")
+// vehicle.print()
+
+// class Car extends Vehicle
+// {
+//      constructor({color,gears,id,latitude, longitude})
+//      {
+//         super({id,latitude,longitude})
+//         this.color = color
+//         this.gears = gears
+//      }
+//      print()
+//      {
+//         super.print()
+//         console.log("color:", this.color)
+//         console.log("gears:", this.gears)
+
+//      }
+// }
+// console.log("-_------")
+// let toyota = new Car({color:"Black",gears: 7,id:"ABC", latitude:45.157,longitude:12.55878})
+// toyota.print()
+
+
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+//     static sayHello() 
+//     {
+//         console.log("Hello!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // 120
+// almostEmptyObject.sayHi() // -> Hi!
+// //almostEmptyObject.sayHello() // error
+// AlmostEmptyClass.sayHello() // -> Hello!
+
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude})
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return{
+//             latitude: this.latitude,
+//             longitude: this.longitude
+//         }
+//     }
+//     static isSameId(v1, v2)
+//     {
+//         return v1.id === v2.id
+//     }
+
+//     static isSameLongitude(v1, v2)
+//     {
+//         return v1.longitude === v2.longitude
+//     }
+// }
+
+// Vehicle.isSameId =  function(v1, v2) 
+// {
+//     return v1.id === v2.id
+// }
+
+
+// let vehicle1 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// let vehicle2 = new Vehicle({longitude: 0, latitude: 0, id: "AL1024"})
+// let vehicle3 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1026"})
+// console.log("Vehicle.isSameId(vehicle1, vehicle2)", Vehicle.isSameId(vehicle1, vehicle2)) // -> true
+// console.log("Vehicle.isSameId(vehicle1, vehicle3)", Vehicle.isSameId(vehicle1, vehicle3)) // -> false
+// console.log("Vehicle.isSameLongitude(vehicle1, vehicle2)", Vehicle.isSameLongitude(vehicle1, vehicle2))
+// console.log("Vehicle.isSameLongitude(vehicle1, vehicle3)", Vehicle.isSameLongitude(vehicle1, vehicle3))
+
+
+// Classes vs. constructors
+
+// class TestClass
+// {
+// constructor(arg)
+// {
+//     this.arg = arg;
+//     console.log(this.arg)
+// }
+// showSth()
+//     {
+//         console.log("I'm prototyped!")
+//     }
+
+// static showSth()
+// {
+//     console.log(`Hi, I'm static!`)
+// }
+// }
+
+// let TestClass = function(arg)
+// {
+// this.arg = arg
+// console.log(this.arg)
+// }
+
+
+// TestClass.prototype.showSth = function()
+// {
+// console.log("I'm prototyped!")
+// };
+
+// TestClass.showSth = function()
+// {
+// console.log(`Hi, I'm static!`)
+// }
+
+
+// let test = new TestClass("Hello")
+// test.showSth()  
+// TestClass.showSth() 
+// console.log(test instanceof TestClass)
+
+
+
+// Built in object
+
+let n = new Number(100.123);
+console.log("n:",n)
+let fixed = n.toFixed(2)
+console.log("fixed:",fixed)
+
+let test1 = Number.isInteger(100)
+console.log("test1:",test1)
+
+
+let test2 = n.isInteger(100); // -> n.isInteger is not afunction
+console.log("test2:",test2)
