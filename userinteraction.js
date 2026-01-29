@@ -1751,14 +1751,30 @@
 
 // Built in object
 
-let n = new Number(100.123);
-console.log("n:",n)
-let fixed = n.toFixed(2)
-console.log("fixed:",fixed)
+// let n = new Number(100.123);
+// console.log("n:",n)
+// let fixed = n.toFixed(2)
+// console.log("fixed:",fixed)
 
-let test1 = Number.isInteger(100)
-console.log("test1:",test1)
+// let test1 = Number.isInteger(100)
+// console.log("test1:",test1)
 
 
-let test2 = n.isInteger(100); // -> n.isInteger is not afunction
-console.log("test2:",test2)
+// let test2 = n.isInteger(100); // -> n.isInteger is not afunction
+// console.log("test2:",test2)
+
+
+let  batch = "javascript + ReactJS"
+console.log("Include Example:", batch.toLocaleLowerCase().includes("reactjs"))
+console.log("Indexof Example",batch.toLowerCase().indexOf("a"))
+console.log("Indexof Example",batch.toLowerCase().lastIndexOf("a"))
+console.log("Indexof Example",batch.toLowerCase().charAt(15))
+
+console.log("substr check:",batch.substr(4,5))
+console.log("substring check:",batch.substring(4,10))
+console.log("substring check:",batch.substring(4,-2))
+
+console.log("slice check:",batch.slice(4,5))
+
+let num = "123456789"
+console.log("Include Example:",num.includes("5"))
